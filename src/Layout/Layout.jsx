@@ -4,12 +4,12 @@ import Navbar from '../components/Shared/Navbar';
 
 const Layout = ({ children }) => {
     return (
-        <div>
-            <nav>
+        <div >
+            <nav >
                 <Navbar />
             </nav>
             <main>{children}</main>
-            <footer>
+            <footer >
                 <Footer />
             </footer>
         </div>
