@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
     return (
         <div>
-            <h1>This is Home</h1>
+            <button className='border-1 rounded-sm font-bold bg-slate-600 text-white'>Home</button>
         </div>
     );
 };
