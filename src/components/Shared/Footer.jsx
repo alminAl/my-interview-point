@@ -3,24 +3,24 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="text-center bg-gray-900 text-white absolute bottom-0 left-0 right-0">
+        <footer className="text-center bg-gray-900 text-white">
             <div className="container px-6 pt-6">
                 <nav className='my-7'>
-                    <ul class="list-none mb-0 md:flex justify-center">
+                    <ul className="list-none mb-0 md:flex justify-center">
                         <li>
-                            <Link to='/blogs' class="text-white my-3 font-bold  md:mx-4">Blogs</Link>
+                            <Link to='/blogs' className="text-white my-3 font-bold  md:mx-4">Blogs</Link>
                         </li>
                         <li>
-                            <Link to='/contact' class="text-white my-3 font-bold md:mx-4">Contact Us</Link>
+                            <Link to='/contact' className="text-white my-3 font-bold md:mx-4">Contact Us</Link>
                         </li>
                         <li>
-                            <Link to='/support' class="text-white my-3 font-bold md:mx-4">Support & How-To Videos</Link>
+                            <Link to='/support' className="text-white my-3 font-bold md:mx-4">Support & How-To Videos</Link>
                         </li>
                         <li>
-                            <Link to='/terms' class="text-white my-3 font-bold md:mx-4">Terms</Link>
+                            <Link to='/terms' className="text-white my-3 font-bold md:mx-4">Terms</Link>
                         </li>
                         <li>
-                            <Link to='/privacy' class="text-white my-3 font-bold md:mx-4">Privacy</Link>
+                            <Link to='/privacy' className="text-white my-3 font-bold md:mx-4">Privacy</Link>
                         </li>
                     </ul>
                 </nav>
