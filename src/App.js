@@ -1,8 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <h1>My Interview Point</h1>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route index element={<Home />}></Route>
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 }
