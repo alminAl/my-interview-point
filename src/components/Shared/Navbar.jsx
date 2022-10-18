@@ -55,7 +55,7 @@ const Navbar = () => {
         </>
     );
     return (
-        <Box className='mt-5' sx={{ flexGrow: 1, backgroundColor: '#ffffff', mx: '3%' }}>
+        <Box className='mt-5' sm={{ flexGrow: 1 }} sx={{ flexGrow: 1, backgroundColor: '#ffffff', mx: '4%' }}>
             <AppBar sx={{ boxShadow: 0 }} position="sticky" style={{ backgroundColor: '#ffffff' }}>
                 <Toolbar sx={{ display: 'flex', alignItems: 'flex-center', justifyContent: 'space-between' }}>
 

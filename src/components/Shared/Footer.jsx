@@ -4,27 +4,27 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="text-center bg-gray-900 text-white">
-            <div className="container px-6 pt-6">
-                <nav className='my-7'>
+            <div>
+                <nav className='pb-6 pt-8 mx-auto'>
                     <ul className="list-none mb-0 md:flex justify-center">
                         <li>
-                            <Link to='/blogs' className="text-white my-3 font-bold  md:mx-4">Blogs</Link>
+                            <Link to='/blogs' className="text-white my-3 mx-3 font-bold ">Blogs</Link>
                         </li>
                         <li>
-                            <Link to='/contact' className="text-white my-3 font-bold md:mx-4">Contact Us</Link>
+                            <Link to='/contact' className="text-white my-3 mx-3 font-bold ">Contact Us</Link>
                         </li>
                         <li>
-                            <Link to='/support' className="text-white my-3 font-bold md:mx-4">Support & How-To Videos</Link>
+                            <Link to='/support' className="text-white my-3 mx-3 font-bold">Support & How-To Videos</Link>
                         </li>
                         <li>
-                            <Link to='/terms' className="text-white my-3 font-bold md:mx-4">Terms</Link>
+                            <Link to='/terms' className="text-white my-3 mx-3 font-bold ">Terms</Link>
                         </li>
                         <li>
-                            <Link to='/privacy' className="text-white my-3 font-bold md:mx-4">Privacy</Link>
+                            <Link to='/privacy' className="text-white my-3 mx-3 font-bold ">Privacy</Link>
                         </li>
                     </ul>
                 </nav>
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center items-center my-3">
                     <a href="#!" type="button" className="rounded-full border-2 mx-3 border-white text-white leading-normal uppercase hover:bg-red-600 hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                         <svg aria-hidden="true"
                             focusable="false"
@@ -130,7 +130,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="text-center px-5 py-10 " style={{ beckgroundColor: '#1A1C36' }} >
+            <div className="text-center py-6" style={{ beckgroundColor: '#1A1C36' }} >
                 © 2022 My Interview Practice, All Rights Reserved. | 1732 1st Avenue #21030, New York, NY 10128
             </div>
         </footer>
