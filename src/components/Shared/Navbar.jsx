@@ -16,8 +16,8 @@ const Navbar = () => {
     ];
     let [open, setOpen] = useState(false);
     return (
-        <div className='shadow-md w-full fixed top-0 left-0'>
-            <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+        <div className='shadow-md lg:shadow-none w-full sticky'>
+            <div className='lg:flex items-center justify-between bg-white py-4 lg:px-10 px-7'>
                 <div>
                     <img src={logo} width='100px' height='100px' alt={logo} />
                 </div>

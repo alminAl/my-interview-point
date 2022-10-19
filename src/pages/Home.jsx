@@ -1,9 +1,10 @@
 import React from 'react';
+import Master from '../components/Home/Master';
 
 const Home = () => {
     return (
         <div>
-            <button className='border-1 rounded-sm font-bold bg-slate-600 text-white'>Home</button>
+            <Master></Master>
         </div>
     );
 };
