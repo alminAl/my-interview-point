@@ -12,7 +12,7 @@ const Navbar = () => {
         { name: "Support", link: "/" },
         { name: "Contact us", link: "/" },
         { name: "Blogs", link: "/" },
-        { name: "Login", link: "/" },
+        { name: "Login", link: "/login" },
     ];
     let [open, setOpen] = useState(false);
     return (
