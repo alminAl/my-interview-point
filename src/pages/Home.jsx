@@ -3,6 +3,7 @@ import Master from '../components/Home/Master';
 import Mock from '../components/Home/Mock';
 import Practice from '../components/Home/Practice';
 import Review from '../components/Home/Review';
+import Started from '../components/Home/Started';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Mock></Mock>
             <Practice></Practice>
             <Review></Review>
+            <Started></Started>
         </div>
     );
 };
