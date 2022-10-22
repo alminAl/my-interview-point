@@ -3,7 +3,7 @@ import React from 'react';
 import people from '../../assets/images/people.png'
 const Advisor = () => {
     return (
-        <div className='min-h-full mx-5 md:mx-44 mt-10 lg:mb-28 mb-5'>
+        <div className='min-h-full mx-10 md:mx-44 mt-10 lg:mb-28 mb-5'>
             <div className='flex-col lg:flex lg:flex-row justify-center items-center'>
                 <div className='lg:mr-5 mb-5 lg:mb-0 w-full lg:w-96 '>
                     <p className='tracking-wider text-center lg:text-left text-base'><small>FOR CAREER ADVISORS</small></p>

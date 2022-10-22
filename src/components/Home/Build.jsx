@@ -6,7 +6,7 @@ import earn from '../../assets/icons/earn-more.svg'
 const Build = () => {
     return (
         <div className='bg-gray-100 py-10'>
-            <div className='mx-5 md:mx-60 mt-10 lg:mb-10 mb-5'>
+            <div className='mx-10 md:mx-60 mt-10 lg:mb-10 mb-5'>
                 <div className='lg:grid lg:grid-cols-3 gap-10'>
                     <div className='mb-8 lg:mb-0 mx-auto w-2/4 lg:mx-0 lg:w-full'>
                         <img src={build} alt={build} className='mx-auto lg:mx-0' />

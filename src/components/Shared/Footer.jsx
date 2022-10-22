@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="text-center bg-gray-900 mt-24 text-white">
+        <footer className="text-center bg-gray-900 mt-15 text-white">
             <div>
-                <nav className='pb-6 pt-8 mx-auto'>
+                <nav className='pb-6 pt-12 mx-auto'>
                     <ul className="list-none mb-0 md:flex justify-center">
                         <li>
                             <Link to='/blogs' className="text-white my-3 mx-3 font-bold ">Blogs</Link>

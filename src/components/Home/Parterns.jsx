@@ -10,7 +10,7 @@ import dalton from '../../assets/patners/dalton.png';
 
 const Parterns = () => {
     return (
-        <div className='min-h-full mx-5 md:mx-52 mt-10 lg:mb-28 mb-5'>
+        <div className='min-h-full mx-10 md:mx-52 mt-10 lg:mb-28 mb-5'>
             <p className='tracking-wider text-[#000f38] text-center text-base mb-7'>OUR PARTNERS</p>
             <div className='grid grid-cols-3 lg:grid-cols-6 gap-4 '>
                 <div className='w-24 lg:w-32 mb-5 lg:mb-0 block mx-auto ml-2 lg:mx-5'>

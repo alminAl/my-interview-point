@@ -3,7 +3,7 @@ import master from '../../assets/images/Master.png';
 
 const Master = () => {
     return (
-        <div className='min-h-full mx-5 md:mx-52 mt-10 lg:mb-28 mb-5'>
+        <div className='min-h-full mx-10 md:mx-52 mt-10 lg:mb-28 mb-5'>
             <div className='flex-col lg:flex lg:flex-row justify-center items-center'>
                 <div className='lg:mr-5 mb-5 lg:mb-0'>
                     <h2 className="text-3xl lg:text-4xl font-bold text-[#000f38] mb-6 text-center lg:text-left">Master the <br /> interview & land a <br /> job worth loving.</h2>

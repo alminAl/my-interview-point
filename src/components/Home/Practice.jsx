@@ -2,7 +2,7 @@ import React from 'react';
 import practice from '../../assets/images/Practice.png'
 const Practice = () => {
     return (
-        <div className='min-h-full mx-5 md:mx-52 mb-5 lg:mb-10'>
+        <div className='min-h-full mx-10 md:mx-52 mb-5 lg:mb-10'>
             <div className='flex-col lg:flex lg:flex-row justify-center items-center'>
                 <div className='lg:mr-5 mb-5 lg:mb-0'>
                     <hr className='w-14 h-2 block mx-auto lg:mx-0 bg-red-600 rounded-md mb-5' />

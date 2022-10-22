@@ -3,7 +3,7 @@ import review from '../../assets/images/Review.png'
 
 const Review = () => {
     return (
-        <div className='min-h-full mx-5 md:mx-52  mb-5 lg:mb-10'>
+        <div className='min-h-full mx-10 md:mx-52  mb-5 lg:mb-10'>
             <div className='flex flex-col-reverse lg:flex-row justify-center items-center'>
                 <div className=' mb-6 lg:mb-[-10px] lg:mr-14'>
                     <img src={review} alt={review} className="w-full md:max-w-full rounded-lg" />
