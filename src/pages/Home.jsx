@@ -1,5 +1,7 @@
 import React from 'react';
 import Advisor from '../components/Home/Advisor';
+import Build from '../components/Home/Build';
+import Job from '../components/Home/Job';
 import Master from '../components/Home/Master';
 import Mock from '../components/Home/Mock';
 import Parterns from '../components/Home/Parterns';
@@ -16,7 +18,9 @@ const Home = () => {
             <Review></Review>
             <Started></Started>
             <Advisor></Advisor>
+            <Build></Build>
             <Parterns></Parterns>
+            <Job></Job>
         </div>
     );
 };

@@ -11,7 +11,7 @@ const Mock = () => {
                 <div className='lg:ml-5 mb-5 lg:mb-0'>
                     <hr className='w-14 h-2 block mx-auto lg:mx-0 bg-red-600 rounded-md mb-5' />
                     <h2 className="text-3xl lg:text-4xl text-[#000f38] font-bold mb-6 text-center lg:text-left">Take Mock Interviews On Your Own</h2>
-                    <p className="mb-6 text-base lg:text-lg font-semibold text-center lg:text-left">Take unlimited interviews and master your skills from anywhere.No awkward meetups required.</p>
+                    <p className="mb-6 text-base lg:text-lg text-[#000f38] font-semibold text-center lg:text-left">Take unlimited interviews and master your skills from anywhere.No awkward meetups required.</p>
                 </div>
             </div>
         </div>
