@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/icons/logo.svg";
 const LoginComponent = () => {
   return (
-    <div className="mt-6 w-full flex justify-center items-center">
+    <div className="mt-6 w-full mb-20 flex justify-center items-center">
       <div className="bg-[#E7303E] w-full sm:w-1/2 md:w-9/12 lg:w-1/2 shadow-md flex flex-col md:flex-row items-center mx-5 sm:m-0 rounded-lg">
         <div className="w-full md:w-1/2 hidden md:flex flex-col justify-center items-center text-white ">
           <h1 className="text-3xl">Hello</h1>

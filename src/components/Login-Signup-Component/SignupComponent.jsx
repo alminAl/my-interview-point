@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/icons/logo.svg";
 const SignupComponent = () => {
   return (
-    <div className="w-full flex justify-center items-center">
+    <div className="w-full mb-20 flex justify-center items-center">
       <div className="bg-white w-full md:w-1/2 flex flex-col items-center py-6 px-8">
         <p className="text-[#E7303E] text-5xl font-extrabold mb-2">SIGNUP</p>
         <img

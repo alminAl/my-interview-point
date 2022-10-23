@@ -1,6 +1,7 @@
 import React from 'react';
 import Advisor from '../components/Home/Advisor';
 import Build from '../components/Home/Build';
+import Cerrier from '../components/Home/Cerrier';
 import Interviews from '../components/Home/Interviews';
 import Job from '../components/Home/Job';
 import Master from '../components/Home/Master';
@@ -26,6 +27,7 @@ const Home = () => {
             <Interviews></Interviews>
             <Job></Job>
             <Training></Training>
+            <Cerrier></Cerrier>
             <Simulate></Simulate>
         </>
     );
