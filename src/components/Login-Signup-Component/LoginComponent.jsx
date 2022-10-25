@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/icons/logo.svg";
+import { useLogin } from "../../hooks/useLogin";
 const LoginComponent = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { login, error, isLoading } = useLogin();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    login(email, password);
+  };
+
   return (
     <div className="mt-6 w-full flex justify-center items-center">
       <div className="bg-[#E7303E] w-full sm:w-1/2 md:w-9/12 lg:w-1/2 shadow-md flex flex-col md:flex-row items-center mx-5 sm:m-0 rounded-lg">
@@ -21,11 +31,14 @@ const LoginComponent = () => {
             alt={logo}
           />
           <form
+            onSubmit={handleSubmit}
             action="#"
             className="w-full flex flex-col justify-center rounded-lg border-[#E7303E]"
           >
             <div className="mb-4">
               <input
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
                 type="email"
                 placeholder="Email"
                 className="w-full p-3 rounded border placeholder-gray-400 focus:outline-none focus:border-[#E7303E]"
@@ -33,14 +46,22 @@ const LoginComponent = () => {
             </div>
             <div className="mb-4">
               <input
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
                 type="password"
                 placeholder="Password"
                 className="w-full p-3 rounded border placeholder-gray-400 focus:outline-none focus:border-[#E7303E]"
               />
             </div>
-            <button className="bg-[#E7303E] font-bold text-white focus:outline-none rounded p-3">
+            <button
+              disabled={isLoading}
+              type="submit"
+              value="Submit"
+              className="bg-[#E7303E] font-bold text-white focus:outline-none rounded p-3"
+            >
               Login
             </button>
+            {error && <div className="text-red-500">{error}</div>}
             <p className="text-center mt-2">
               Want to Create an Accout?{" "}
               <Link to="/signup">
