@@ -1,9 +1,10 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-
+// import About from "./components/About/About";
+// import BlogComponent from "./components/BlogComponent/BlogComponent";
 import NotFound from "./components/Shared/NotFound";
 import { useAuthContext } from "./hooks/useAuthContext";
 import Layout from "./Layout/Layout";
-
+// import Blog from "./pages/Blog";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";

@@ -17,6 +17,7 @@ const Navbar = () => {
     { name: "Contact us", link: "/" },
     { name: "Blogs", link: "/" },
     { name: "Signup", link: "/signup" },
+    { name: "Dashboard", link: "/dashboard/profile" },
   ];
   let [open, setOpen] = useState(false);
   return (
