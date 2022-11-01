@@ -11,11 +11,10 @@ import shallow from "zustand/shallow";
 import { userProfileUpdateValidation } from "../../validators/profileValidations";
 import useProfileStore from "../../store/useProfileStore";
 // import { LoadingButton } from "@mui/lab";
-// import SaveIcon from "@mui/icons-material/Save";
+import SaveIcon from "@mui/icons-material/Save";
 import { usePatchRequest } from "../../hooks/requestMethods";
-
-import { useEffect, useRef } from "react";
 import { useAuthContext } from "../../hooks/useAuthContext";
+import { useEffect, useRef } from "react";
 
 export const ProfileImage = () => {
   // glabal storage
@@ -54,7 +53,7 @@ export const ProfileImage = () => {
           src={
             userProfile?.profile_image
               ? userProfile?.profile_image
-              : "https://pbs.twimg.com/media/EYVxlOSXsAExOpX.jpg"
+              : "https://www.w3schools.com/w3images/avatar2.png"
           }
           alt=""
           className="inline-block m-auto w-32 h-32 rounded-full md:w-48 md:h-48 md:rounded-full"
@@ -80,8 +79,7 @@ const ProfileUpdateModal = ({ open, setOpen }) => {
     shallow
   );
   const { user } = useAuthContext();
-  const { data: getUpdateData, updateData, error } = usePatchRequest();
-  console.log(error);
+  const { data: getUpdateData, updateData } = usePatchRequest();
 
   /** form submision */
   const {
@@ -90,26 +88,23 @@ const ProfileUpdateModal = ({ open, setOpen }) => {
     values,
     touched,
     errors,
-    // isSubmitting,
+    isSubmitting,
     handleSubmit,
     // setFieldValue,
     // resetForm,
   } = useFormik({
     initialValues: {
-      name: userProfile?.name ?? "",
-      // email: userProfile?.email ?? '',
-      mobile_number: userProfile?.mobile_number ?? "",
-      about: userProfile?.about ?? "",
+      name: userProfile.name ?? "",
+      email: userProfile.email ?? "",
+      mobile_number: userProfile.mobile_number ?? "",
+      about: userProfile.about ?? "",
     },
     validationSchema: userProfileUpdateValidation,
     onSubmit: async (data, action) => {
-      console.log(data);
       try {
         updateData("/api/user/profile/", user.token, data);
         setOpen(!open);
-      } catch (error) {
-        console.log(error);
-      }
+      } catch (error) {}
     },
   });
   useEffect(() => {
@@ -145,21 +140,21 @@ const ProfileUpdateModal = ({ open, setOpen }) => {
                   helperText={touched.name && errors.name}
                 />
               </div>
-              {/* <div className="my-2">
-                                <TextField
-                                    fullWidth
-                                    required
-                                    placeholder="email@email.com"
-                                    size="small"
-                                    label="Email"
-                                    name="email"
-                                    value={values.email}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    error={touched.email && Boolean(errors.email)}
-                                    helperText={touched.email && errors.email}
-                                />
-                            </div> */}
+              <div className="my-2">
+                <TextField
+                  fullWidth
+                  required
+                  placeholder="email@email.com"
+                  size="small"
+                  label="Email"
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  error={touched.email && Boolean(errors.email)}
+                  helperText={touched.email && errors.email}
+                />
+              </div>
 
               <div className="my-2">
                 <TextField
@@ -176,19 +171,37 @@ const ProfileUpdateModal = ({ open, setOpen }) => {
                   helperText={touched.mobile_number && errors.mobile_number}
                 />
               </div>
+
+              {/* <div className="my-2">
+                <TextField
+                  fullWidth
+                  required
+                  multiline
+                  rows={4}
+                  placeholder="About"
+                  size="small"
+                  label="About"
+                  name="about"
+                  value={values.about}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  error={touched.about && Boolean(errors.about)}
+                  helperText={touched.about && errors.about}
+                />
+              </div> */}
             </DialogContent>
             <DialogActions>
               <Button onClick={() => setOpen(!open)}>Disagree</Button>
-              {/* <LoadingButton
-                                // fullWidth
-                                variant="outlined"
-                                type="submit"
-                                loading={isSubmitting}
-                                loadingPosition="start"
-                                startIcon={<SaveIcon />}
-                            >
-                                Save
-                            </LoadingButton> */}
+              <Button
+                // fullWidth
+                variant="outlined"
+                type="submit"
+                loading={isSubmitting}
+                loadingPosition="start"
+                startIcon={<SaveIcon />}
+              >
+                Save
+              </Button>
             </DialogActions>
           </form>
         </Dialog>

@@ -33,7 +33,13 @@ function App() {
               element={!user ? <Signup /> : <Navigate to="/" />}
             />
             {/* <Route path="dashboard/profile" element={<Dashboard />}></Route> */}
-            <Route path="dashboard/profile" element={<Playground />} />
+            <Route
+                            path='dashboard/profile'
+                            element={
+                               <Playground /> 
+                            }>
+                              </Route>
+
 
             <Route path="/blog" element={<Blog></Blog>}></Route>
             <Route path="/contact" element={<Contact></Contact>}></Route>
