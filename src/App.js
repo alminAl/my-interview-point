@@ -8,6 +8,9 @@ import Layout from "./Layout/Layout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+
 
 function App() {
   const { user } = useAuthContext();
@@ -29,9 +32,8 @@ function App() {
               element={!user ? <Signup /> : <Navigate to="/" />}
             />
 
-
-            {/* <Route path="/blog" element={<Blog></Blog>}></Route> */}
-
+            <Route path="/blog" element={<Blog></Blog>}></Route>
+            <Route path="/contact" element={<Contact></Contact>}></Route>
           </Routes>
         </Layout>
       </BrowserRouter>
