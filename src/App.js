@@ -4,12 +4,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import NotFound from "./components/Shared/NotFound";
 import { useAuthContext } from "./hooks/useAuthContext";
 import Layout from "./Layout/Layout";
-
-import Dashboard from "./pages/dashboard/Dashboard";
-import Profile from "./pages/dashboard/Profile";
-
 // import Blog from "./pages/Blog";
-
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -37,17 +32,8 @@ function App() {
               element={!user ? <Signup /> : <Navigate to="/" />}
             />
 
-
-            <Route
-              path="dashboard"
-              element={<Dashboard /> }
-            >
-              <Route path="profile" element={<Profile />} />
-            </Route>
-
             <Route path="/blog" element={<Blog></Blog>}></Route>
             <Route path="/contact" element={<Contact></Contact>}></Route>
-
           </Routes>
         </Layout>
       </BrowserRouter>
