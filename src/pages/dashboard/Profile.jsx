@@ -51,7 +51,7 @@ const Profile = () => {
                 </td>
                 <td className='py-2 font-semibold'>{userProfile?.mobile_number}</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td className='py-2 pr-10 capitalize font-extrabold'>
                   about
                 </td>
@@ -59,7 +59,7 @@ const Profile = () => {
 
                   {userProfile?.about}
                 </td>
-              </tr>
+              </tr> */}
               <tr>
                 <td></td>
                 <td></td>

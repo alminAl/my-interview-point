@@ -13,8 +13,9 @@ import useProfileStore from "../../store/useProfileStore";
 // import { LoadingButton } from "@mui/lab";
 // import SaveIcon from "@mui/icons-material/Save";
 import { usePatchRequest } from "../../hooks/requestMethods";
-import { useAuthContext } from "../../hooks/useAuthContext";
+
 import { useEffect, useRef } from "react";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 export const ProfileImage = () => {
   // glabal storage
