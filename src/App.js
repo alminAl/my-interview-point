@@ -10,7 +10,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
-
+import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
   const { user } = useAuthContext();
@@ -31,6 +31,7 @@ function App() {
               path="/signup"
               element={!user ? <Signup /> : <Navigate to="/" />}
             />
+            <Route path="dashboard/profile" element={<Dashboard />}></Route>
 
             <Route path="/blog" element={<Blog></Blog>}></Route>
             <Route path="/contact" element={<Contact></Contact>}></Route>
