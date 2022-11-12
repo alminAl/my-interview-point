@@ -10,7 +10,10 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
-import Playground from "./pages/Playground";
+import SideNavBarPlayGround from "./pages/playground/SideNavBarPlayGround";
+
+
+// import Playground from "./pages/Playground";
 // import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
@@ -33,16 +36,13 @@ function App() {
               element={!user ? <Signup /> : <Navigate to="/" />}
             />
             {/* <Route path="dashboard/profile" element={<Dashboard />}></Route> */}
-            <Route
-                            path='dashboard/profile'
-                            element={
-                               <Playground /> 
-                            }>
-                              </Route>
-
+            {/* <Route path="dashboard/profile" element={<Playground />}></Route> */}
 
             <Route path="/blog" element={<Blog></Blog>}></Route>
             <Route path="/contact" element={<Contact></Contact>}></Route>
+            {/* playground link */}
+            <Route path="/playground/drawer" element={<SideNavBarPlayGround />}></Route>
+            
           </Routes>
         </Layout>
       </BrowserRouter>

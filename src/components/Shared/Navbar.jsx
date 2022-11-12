@@ -1,20 +1,21 @@
 import React, { useState } from "react";
-import { Avatar, MenuItem } from "@mui/material";
+// import { Avatar, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
-import shallow from "zustand/shallow";
+// import shallow from "zustand/shallow";
 import logo from "../../assets/icons/logo.svg";
 import { useAuthContext } from "../../hooks/useAuthContext";
-import { useLogout } from "../../hooks/useLogout";
-import useProfileStore from "../../store/useProfileStore";
+import SideNavBar from "../../pages/playground/SideNavBarPlayGround";
+// import { useLogout } from "../../hooks/useLogout";
+// import useProfileStore from "../../store/useProfileStore";
 
 const Navbar = () => {
-  const { logout } = useLogout();
+  // const { logout } = useLogout();
   const { user } = useAuthContext();
   // glabal storage
-  const [userProfile] = useProfileStore(
-    (state) => [state.userProfile],
-    shallow
-  );
+  // const [userProfile] = useProfileStore(
+  //   (state) => [state.userProfile],
+  //   shallow
+  // );
 
   let Links = [
     { name: "Home", link: "/" },
@@ -54,6 +55,8 @@ const Navbar = () => {
             open ? "top-20 " : "top-[-490px]"
           }`}
         >
+
+          <SideNavBar />
           {Links.map((link) => (
             <li
               key={link.name || link.account}
@@ -88,7 +91,7 @@ const Navbar = () => {
               )}
             </li>
           ))}
-          {user && userProfile && (
+          {/* {user && userProfile && (
             <>
               <Link to={"/dashboard/profile"}>
                 <MenuItem className="hover:bg-transparent">
@@ -113,7 +116,7 @@ const Navbar = () => {
                 </button>
               </li>
             </>
-          )}
+          )} */}
         </ul>
       </div>
     </div>
