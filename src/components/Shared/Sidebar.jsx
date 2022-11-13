@@ -14,7 +14,7 @@ const Sidebar = () => {
         { name: "Pricing", link: "/" },
         { name: "Enterprise", link: "/" },
         { name: "Training", link: "/" },
-        { name: "Support", link: "/" },
+        { name: "Support & Video Tutorials", link: "/support" },
         { name: "Contact us", link: "/contact" },
         { name: "Blogs", link: "/blog" },
         { account: "Login", link: "/login" },

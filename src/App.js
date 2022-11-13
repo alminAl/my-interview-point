@@ -11,6 +11,9 @@ import Signup from "./pages/Signup";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import SideNavBarPlayGround from "./pages/playground/SideNavBarPlayGround";
+import SupportPage from "./pages/SupportPage";
+import DeleteAccount from "./components/Support/Article/DeleteAccount";
+
 
 
 // import Playground from "./pages/Playground";
@@ -39,6 +42,8 @@ function App() {
             {/* <Route path="dashboard/profile" element={<Playground />}></Route> */}
 
             <Route path="/blog" element={<Blog></Blog>}></Route>
+            <Route path="/support" element={<SupportPage/>}></Route>
+            <Route path="/support/deleteAccount" element={<DeleteAccount/>}></Route>
             <Route path="/contact" element={<Contact></Contact>}></Route>
             {/* playground link */}
             <Route path="/playground/drawer" element={<SideNavBarPlayGround />}></Route>
