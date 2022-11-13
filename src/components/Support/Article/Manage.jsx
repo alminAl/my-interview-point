@@ -2,7 +2,7 @@ import React from "react";
 import manageAcc1 from "../../../assets/article/Manage Settings 1.png";
 import manageAcc2 from "../../../assets/article/Manage Settings 2.png";
 import manageAcc3 from "../../../assets/article/Manage Settings 3.png";
-import manageAcc4 from "../../../assets/article/Manage Settings 4.png";
+
 const Manage = () => {
   return (
     <div className="py-4">
@@ -49,11 +49,7 @@ const Manage = () => {
           src={manageAcc3}
           alt={manageAcc3}
         />
-        <img
-          className="object-center	lg:max-w-sm mx-auto	mb-6"
-          src={manageAcc4}
-          alt={manageAcc4}
-        />
+       
       </div>
     </div>
   );
