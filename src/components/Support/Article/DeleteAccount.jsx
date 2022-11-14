@@ -30,33 +30,33 @@ const DeleteAccount = () => {
           src={dltAcc2}
           alt={dltAcc2}
         />
-        
-     <p className="lg:max-w-xl mx-auto mb-10 text-[#000f38]">Select “Yes, Delete” to confirm.</p>
 
-     <img
-        className="object-center	lg:max-w-sm mx-auto	mb-6"
-        src={dltAcc3}
-        alt={dltAcc3}
-      />
+        <p className="lg:max-w-xl mx-auto mb-10 text-[#000f38]">Select “Yes, Delete” to confirm.</p>
 
-     <p className="mb-10 text-[#000f38] lg:max-w-xl mx-auto">
-        You will then be directed to a page where you have to enter your
-        password <br /> to delete your account. Once you enter in the correct
-        password and click <br /> “submit” your account will be deleted.
-      </p>
-      <img
-        className="object-center	lg:max-w-sm mx-auto	mb-6"
-        src={dltAcc4}
-        alt={dltAcc4}
-      />
- <p className="mb-10 text-[#000f38] lg:max-w-xl mx-auto">
- You will then be sent an email confirming that you want to delete your <br /> account. Click on the verification link provided in the email. You will be <br /> taken to a page where you will have to enter your password to verify. Once <br /> you enter your password and hit “Confirm Delete” your account will be <br /> deleted.
+        <img
+          className="object-center	lg:max-w-sm mx-auto	mb-6"
+          src={dltAcc3}
+          alt={dltAcc3}
+        />
 
-      </p>
+        <p className="mb-10 text-[#000f38] lg:max-w-xl mx-auto">
+          You will then be directed to a page where you have to enter your
+          password <br /> to delete your account. Once you enter in the correct
+          password and click <br /> “submit” your account will be deleted.
+        </p>
+        <img
+          className="object-center	lg:max-w-sm mx-auto	mb-6"
+          src={dltAcc4}
+          alt={dltAcc4}
+        />
+        <p className="mb-10 text-[#000f38] lg:max-w-xl mx-auto">
+          You will then be sent an email confirming that you want to delete your <br /> account. Click on the verification link provided in the email. You will be <br /> taken to a page where you will have to enter your password to verify. Once <br /> you enter your password and hit “Confirm Delete” your account will be <br /> deleted.
+
+        </p>
       </div>
 
-     
-      
+
+
     </div>
   );
 };

@@ -8,10 +8,10 @@ import Video from '../components/Support/Video'
 const SupportPage = () => {
   return (
     <div>
-     <SupportIntro/>
-     <Video/>
-     <SupportQuestions/>
-     <FindAnswer/>
+      <SupportIntro />
+      <Video />
+      <SupportQuestions />
+      <FindAnswer />
     </div>
   )
 }

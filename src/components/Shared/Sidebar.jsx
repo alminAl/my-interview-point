@@ -14,6 +14,7 @@ const Sidebar = () => {
         { name: "Pricing", link: "/" },
         { name: "Enterprise", link: "/" },
         { name: "Training", link: "/" },
+        { name: "FAQs", link: "/faq" },
         { name: "Support & Video Tutorials", link: "/support" },
         { name: "Contact us", link: "/contact" },
         { name: "Blogs", link: "/blog" },
@@ -25,8 +26,8 @@ const Sidebar = () => {
     const { user } = useAuthContext();
     return (
         <div>
-            <button  onClick={() => setOpen(!open)}>
-              <MenuIcon style={{height : '50px', width : '50px'}} />
+            <button onClick={() => setOpen(!open)}>
+                <MenuIcon style={{ height: '50px', width: '50px' }} />
             </button>
             <Drawer
                 anchor={'left'}
@@ -36,7 +37,7 @@ const Sidebar = () => {
                 {/* menu list */}
                 <div className="h-screen bg-[#E7303E] w-72 lg:w-80">
                     <button className='mb-10' onClick={() => setOpen(!open)}>
-                        <CloseIcon className='text-white' style={{height : '50px', width : '50px', position : 'absolute', right : '0px', top : '10px'}}  />
+                        <CloseIcon className='text-white' style={{ height: '50px', width: '50px', position: 'absolute', right: '0px', top: '10px' }} />
                     </button>
                     <ul
                         className={` items-center md:pb-0 space-y-5"

@@ -49,7 +49,7 @@ const Manage = () => {
           src={manageAcc3}
           alt={manageAcc3}
         />
-       
+
       </div>
     </div>
   );
