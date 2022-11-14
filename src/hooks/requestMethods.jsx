@@ -43,14 +43,14 @@ export const usePatchRequest = () => {
     const updateData = async (url, token, data) => {
         setLoading(true)
         setError(null)
-
+        
 
         const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}${url}`, {
             method: 'PATCH',
             body: JSON.stringify(data),
-            headers: {
+            headers: { 
                 'Content-type': 'application/json',
-                'Authorization': 'Bearer ' + token,
+                'Authorization': 'Bearer ' + token, 
             },
         })
         const json = await response.json()
@@ -70,4 +70,3 @@ export const usePatchRequest = () => {
     return { data, isLoading, error, updateData }
 
 }
-
