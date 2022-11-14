@@ -20,6 +20,7 @@ import OrganizationAccount from "./components/Support/Article/OrganizationAccoun
 import Requirement from "./components/Support/Article/Requirement";
 import Resolve from "./components/Support/Article/Resolve";
 import Manage from "./components/Support/Article/Manage";
+import Enterprise from "./components/Enterprise/Enterprise";
 // import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
@@ -41,22 +42,33 @@ function App() {
               path="/signup"
               element={!user ? <Signup /> : <Navigate to="/" />}
             />
-            {/* <Route path="dashboard/profile" element={<Dashboard />}></Route> */}
-            <Route
-              path='dashboard/profile'
-              element={
-                <Playground />
-              }>
-            </Route>
+            <Route path="/enterprise" element={<Enterprise />} />
 
+            {/* <Route path="dashboard/profile" element={<Dashboard />}></Route> */}
+            <Route path="dashboard/profile" element={<Playground />}></Route>
 
             <Route path="/blog" element={<Blog></Blog>}></Route>
             <Route path="/support" element={<SupportPage />}></Route>
-            <Route path="/support/deleteAccount" element={<DeleteAccount />}></Route>
-            <Route path="/support/createAccount" element={<CreateAccount />}></Route>
-            <Route path="/support/activateAccount" element={<ActivateAccount />}></Route>
-            <Route path="/support/organizationAccount" element={<OrganizationAccount />}></Route>
-            <Route path="/support/requirement" element={<Requirement />}></Route>
+            <Route
+              path="/support/deleteAccount"
+              element={<DeleteAccount />}
+            ></Route>
+            <Route
+              path="/support/createAccount"
+              element={<CreateAccount />}
+            ></Route>
+            <Route
+              path="/support/activateAccount"
+              element={<ActivateAccount />}
+            ></Route>
+            <Route
+              path="/support/organizationAccount"
+              element={<OrganizationAccount />}
+            ></Route>
+            <Route
+              path="/support/requirement"
+              element={<Requirement />}
+            ></Route>
             <Route path="/support/resolve" element={<Resolve />}></Route>
             <Route path="/support/manage" element={<Manage />}></Route>
             <Route path="/contact" element={<Contact></Contact>}></Route>

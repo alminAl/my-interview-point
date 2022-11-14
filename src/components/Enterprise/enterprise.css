@@ -1,0 +1,10 @@
+.testi{
+    background-image: url("https://i.postimg.cc/BbmCTGDH/garrhet-sampson-Cm-F-5-GYc6c0-unsplash.jpg");
+    background-size: cover;
+    background-color: black;
+}
+.testi::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    background: linear-gradient( to left, white 0%, rgb(0, 0, 0) 100%);}
