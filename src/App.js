@@ -11,6 +11,7 @@ import Signup from "./pages/Signup";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Playground from "./pages/Playground";
+import Faq from "./pages/Faq";
 // import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
@@ -34,15 +35,16 @@ function App() {
             />
             {/* <Route path="dashboard/profile" element={<Dashboard />}></Route> */}
             <Route
-                            path='dashboard/profile'
-                            element={
-                               <Playground /> 
-                            }>
-                              </Route>
+              path='dashboard/profile'
+              element={
+                <Playground />
+              }>
+            </Route>
 
 
             <Route path="/blog" element={<Blog></Blog>}></Route>
             <Route path="/contact" element={<Contact></Contact>}></Route>
+            <Route path="/faq" element={<Faq></Faq>}></Route>
           </Routes>
         </Layout>
       </BrowserRouter>

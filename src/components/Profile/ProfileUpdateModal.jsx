@@ -104,7 +104,7 @@ const ProfileUpdateModal = ({ open, setOpen }) => {
       try {
         updateData("/api/user/profile/", user.token, data);
         setOpen(!open);
-      } catch (error) {}
+      } catch (error) { }
     },
   });
   useEffect(() => {

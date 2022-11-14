@@ -1,0 +1,17 @@
+.faqCat {
+    width: 100%;
+    position: relative;
+    float: left;
+    background: #f3f4f7;
+    padding: 22px 20px;
+    color: #000F38;
+    font-family: 'BiotifMedium';
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 2.23px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
