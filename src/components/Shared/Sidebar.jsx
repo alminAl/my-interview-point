@@ -11,7 +11,6 @@ import CloseIcon from '@mui/icons-material/Close';
 const Sidebar = () => {
     let Links = [
         { name: "Home", link: "/" },
-        { name: "Pricing", link: "/" },
         { name: "Enterprise", link: "/" },
         { name: "Training", link: "/" },
         { name: "FAQs", link: "/faq" },

@@ -4,12 +4,12 @@ import Navbar from '../components/Shared/Navbar';
 
 const Layout = ({ children }) => {
     return (
-        <div >
+        <div className='min-h-screen'>
             <nav >
                 <Navbar />
             </nav>
             <main>{children}</main>
-            <footer >
+            <footer className="sticky top-[100vh]">
                 <Footer />
             </footer>
         </div>

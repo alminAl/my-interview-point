@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="text-center bg-gray-900 mt-15 text-white">
-            <div>
+        <footer className="text-center bg-gray-900 mt-15 text-white
+        ">
+            <div >
                 <nav className='pb-6 pt-12 mx-auto'>
                     <ul className="list-none mb-0 md:flex justify-center">
                         <li>
@@ -13,6 +14,11 @@ const Footer = () => {
                         <li>
                             <Link to='/contact' className="text-white my-3 mx-3 font-bold ">Contact Us</Link>
                         </li>
+
+                        <li>
+                            <Link to='/faq' className="text-white my-3 mx-3 font-bold ">FAQs</Link>
+                        </li>
+
                         <li>
                             <Link to='/support' className="text-white my-3 mx-3 font-bold">Support & How-To Videos</Link>
                         </li>
