@@ -12,6 +12,7 @@ const Sidebar = () => {
     { name: "Home", link: "/" },
     { name: "Enterprise", link: "/enterprise" },
     { name: "Training", link: "/" },
+    { name: "Quiz", link: "/quiz" },
     { name: "FAQs", link: "/faq" },
     { name: "Support & Video Tutorials", link: "/support" },
     { name: "Contact us", link: "/contact" },

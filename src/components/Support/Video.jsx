@@ -14,7 +14,8 @@ const Video = () => {
               className="relative h-0 overflow-hidden max-w-full w-full"
               style={{ paddingBottom: "56.25%" }}
             >
-               <iframe
+              <iframe
+                title="a1"
                 src="https://www.youtube.com/embed/Ht45lw8VvWo"
                 frameBorder="0"
                 allowFullScreen
@@ -36,6 +37,7 @@ const Video = () => {
               style={{ paddingBottom: "56.25%" }}
             >
               <iframe
+                title="a2"
                 src="https://www.youtube.com/embed/fwJ8wvNXqbk"
                 frameBorder="0"
                 allowFullScreen
@@ -57,6 +59,7 @@ const Video = () => {
               style={{ paddingBottom: "56.25%" }}
             >
               <iframe
+                title="a3"
                 src="https://www.youtube.com/embed/XbOxofiez8Q"
                 frameBorder="0"
                 allowFullScreen
@@ -78,6 +81,7 @@ const Video = () => {
               style={{ paddingBottom: "56.25%" }}
             >
               <iframe
+                title="a4"
                 src="https://www.youtube.com/embed/SXrrsxb29V0"
                 frameBorder="0"
                 allowFullScreen
@@ -99,6 +103,7 @@ const Video = () => {
               style={{ paddingBottom: "56.25%" }}
             >
               <iframe
+                title="a5"
                 src="https://www.youtube.com/embed/aiZin5KAFeU"
                 frameBorder="0"
                 allowFullScreen
@@ -120,6 +125,7 @@ const Video = () => {
               style={{ paddingBottom: "56.25%" }}
             >
               <iframe
+                title="a6"
                 src="https://www.youtube.com/embed/odo7dYTIPJk"
                 frameBorder="0"
                 allowFullScreen

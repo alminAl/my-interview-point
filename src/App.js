@@ -21,6 +21,7 @@ import Requirement from "./components/Support/Article/Requirement";
 import Resolve from "./components/Support/Article/Resolve";
 import Manage from "./components/Support/Article/Manage";
 import Enterprise from "./components/Enterprise/Enterprise";
+import Quiz from "./pages/Quiz";
 // import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
             <Route path="/contact" element={<Contact></Contact>}></Route>
 
             <Route path="/faq" element={<Faq></Faq>}></Route>
+            <Route path="/quiz" element={<Quiz />}></Route>
           </Routes>
         </Layout>
       </BrowserRouter>
