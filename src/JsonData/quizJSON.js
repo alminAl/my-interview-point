@@ -6,7 +6,7 @@ export const quizzes = [
     option_B: "User Interface Framework",
     option_C: "Both A & B",
     option_D: "None of the above",
-    correctAns: "user-interface framework",
+    correctAns: "User Interface Framework",
   },
   {
     id: 2,
