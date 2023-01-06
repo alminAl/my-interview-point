@@ -22,6 +22,9 @@ import Resolve from "./components/Support/Article/Resolve";
 import Manage from "./components/Support/Article/Manage";
 import Enterprise from "./components/Enterprise/Enterprise";
 import Quiz from "./pages/Quiz";
+import Training from "./pages/Training";
+// import TrainingJourney from "./components/TrainingComponents/TrainingJourney";
+// import LessonPlan from "./components/TrainingComponents/LessonPlan";
 // import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
@@ -76,6 +79,10 @@ function App() {
 
             <Route path="/faq" element={<Faq></Faq>}></Route>
             <Route path="/quiz" element={<Quiz />}></Route>
+            <Route path="/training" element=
+              {<Training></Training>}></Route>
+            {/* <Route path="/trainingjourney" element={<TrainingJourney></TrainingJourney>}></Route>
+            <Route path="/lessonplan" element={<LessonPlan></LessonPlan>}></Route> */}
           </Routes>
         </Layout>
       </BrowserRouter>

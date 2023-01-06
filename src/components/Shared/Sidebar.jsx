@@ -11,7 +11,7 @@ const Sidebar = () => {
   let Links = [
     { name: "Home", link: "/" },
     { name: "Enterprise", link: "/enterprise" },
-    { name: "Training", link: "/" },
+    { name: "Training", link: "/training" },
     { name: "Quiz", link: "/quiz" },
     { name: "FAQs", link: "/faq" },
     { name: "Support & Video Tutorials", link: "/support" },
